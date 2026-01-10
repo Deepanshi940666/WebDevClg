@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f2f6ff;
+        }
+
+        fieldset {
+            width: 450px;
+            margin: 40px auto;
+            padding: 20px;
+            border-radius: 10px;
+            border: 2px solid #4a6cf7;
+            background-color: #ffffff;
+        }
+
+        legend {
+            font-size: 20px;
+            font-weight: bold;
+            color: #4a6cf7;
+            padding: 0 10px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+        }
+
+        label,
+        span {
+            font-weight: bold;
+        }
+
+        input[type="text"],
+        input[type="number"],
+        input[type="email"],
+        input[type="date"],
+        textarea,
+        select {
+            width: 100%;
+            padding: 8px;
+            margin-top: 5px;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+        }
+
+        textarea {
+            resize: none;
+        }
+
+        input[type="radio"],
+        input[type="checkbox"] {
+            margin-right: 5px;
+        }
+
+        input[type="file"] {
+            margin-top: 5px;
+        }
+
+        li {
+            font-size: 14px;
+            margin-left: 20px;
+        }
+
+        button {
+            width: 100%;
+            padding: 10px;
+            background-color: #4a6cf7;
+            color: white;
+            border: none;
+            border-radius: 6px;
+            font-size: 16px;
+            /* cursor: pointer; */
+            margin-top: 15px;
+        }
+
+        button:hover {
+            background-color: #364fc7;
+        }
+    </style>
+
+</head>
+
+<body>
+    <fieldset>
+        <legend>Form</legend>
+        <form>
+            <span>Name:</span>
+            <input id="name" type="text" placeholder="Enter your name">
+            <br>
+            </br>
+            <span>DOB:</span>
+            <input id="dob" type="date">
+            <br>
+            </br>
+            <span>City:</span>
+            <select>
+                <option>Jabalpur</option>
+                <option>Bhopal</option>
+                <option>indore</option>
+                <option>Katni</option>
+                <option>Gwalior</option>
+            </select>
+            <br>
+            </br>
+            <span>Contact No.:</span>
+            <input id="contact" type="number" placeholder="Enter contact number">
+            <br>
+            </br>
+            <span>Email:</span>
+            <input id="email" type="email" placeholder="Enter email">
+            <br> 
+            </br> 
+            <span>Address:</span>
+            <textarea rows="4" cols="50" placeholder="ENTER YOUR ADDRESS"></textarea>
+            <br>
+            </br>
+            <span>Gender:</span>
+            <input type="radio" name="gender" value="male"> MALE
+            <input type="radio" name="gender" value="female"> FEMALE
+            <br>
+            </br>
+            <span>UPLOAD FILE</span>
+            <input type="file">
+            <br>
+            </br>
+            <span> TERMS AND CONDITIONS: </span> <input type="checkbox"> <span>
+                <li> All information provided by the student must be true and correct. </li>
+                <li> This form is to be used only for academic/college purposes. </li>
+                <li> Providing false information may lead to rejection of the form. </li>
+                <li> The college has the right to verify the submitted details. </li>
+            </span>
+            <button>Submit</button>
+        </form>
+    </fieldset>
+
+</body>
+
+</html>
