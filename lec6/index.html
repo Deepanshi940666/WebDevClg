@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #parent {
+            height: 100vh;
+            display: flex;
+            /* justify-content: baseline; at its same position*/
+            /* justify-content: center; align in center horizontally */
+            /* justify-content: end; align in end horizontally */
+            /* justify-content: space-around; */
+            /* justify-content: space-between; */
+            justify-content: space-evenly;
+            /* align-items: baseline;at its same position vertically */
+            /* align-items: center;  align in center vertically */
+            /* align-items: end;align in end vertically  */
+            /* justify-content: center;
+            align-items: center; */
+
+        }
+
+        #parent div {
+            height: 100px;
+            width: 100px;
+
+        }
+
+        #parent div:nth-of-type(1) {
+            background-color: rgb(243, 243, 141);
+        }
+
+        #parent div:nth-of-type(2) {
+            background-color: rgb(141, 224, 243);
+        }
+
+        #parent div:nth-of-type(3) {
+            background-color: rgb(240, 166, 106);
+        }
+
+        #parent div:nth-of-type(4) {
+            background-color: rgb(242, 134, 195);
+        }
+    </style>
+</head>
+
+<body>
+    <div id="parent">
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+    </div>
+</body>
+
+</html>
