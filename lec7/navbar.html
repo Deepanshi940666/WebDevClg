@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .navbar{
+           display: flex;
+           align-items: center;
+           height: 10vh;
+           /* justify-content: space-between; */
+           gap: 20px;
+        }
+        #one{
+            font-size: xx-large;
+            color: black 2px solid;
+        }
+        #two{
+            font-size: x-large;
+            color: black 2px solid;
+        }
+        #three{
+            font-size: large;
+            color: black 2px solid;
+        }
+        #four{
+            /* font-size: xx-large; */
+            color: rgb(52, 49, 49) 2px solid;
+        }
+        #five{
+            /* font-size: xx-large; */
+            color: rgb(91, 88, 88) 2px solid;
+        }
+        @media  screen and (max-width:700px) {
+            .navbar{
+                flex-direction: column;
+                align-items: baseline;
+
+            }
+        }
+        #searchbtn{
+            background-color: rgb(15, 72, 15);
+            color: aliceblue;
+            border-radius: 30px;
+        }
+        #searchbtn:hover{
+            background-color: rgb(215, 235, 215);
+            color: black;
+        }
+    </style>
+</head>
+<body>
+    <div class="navbar">
+        <a id="one">Navbar</a>
+        <a id="two">Home</a>
+        <a id="three">Link</a>
+        <a id="four">Dropdown</a>
+        <a id="five">Disabled</a>
+        <input type="text" placeholder="search">
+        <button id="searchbtn">Search</button>
+    </div>   
+</body>
+</html>

@@ -12,7 +12,7 @@
         }
         .container{
             display: flex;
-            flex-wrap: wrap;
+            /* flex-wrap: wrap; */
             justify-content: space-around;
             background-color: aliceblue;
             border: 2px solid black;
@@ -32,13 +32,24 @@
             align-items: center;
             font-size: 2rem;
         }
+        #one{
+            flex-basis: 200px;
+            /* flex-grow: 2; */
+           
+        }
+
+        #two{
+            /* flex-basis: 200px; */
+            /* flex-grow: 1; */
+             flex-shrink: 4;
+        }
     </style>
 </head>
 <body>
     <h1>Flexbox Parent property</h1>
     <div class="container">
-        <div class="box">1</div>
-        <div class="box">2</div>
+        <div class="box" id="one">1</div>
+        <div class="box" id="two">2</div>
         <div class="box">3</div>
         <div class="box">4</div>
         <div class="box">5</div>

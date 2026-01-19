@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            perspective: 900px;
+        }
+        .container {
+            position: relative;
+            height: 800px;
+            width: 400px;
+            margin: 30px auto;
+            transform-style: preserve-3d;
+            transition: 3s;
+        }
+
+       #card1{
+        position: absolute;
+        height: 50%;
+        width: 100%;
+        z-index: 3;
+        backface-visibility: hidden;
+       }
+       img{
+        height: 100%;
+        width: 100%;
+       }
+       #card2{
+        position: absolute;
+        height: 50%;
+        width: 100%;
+        background-color: aqua;
+        transform: rotateY(180deg);
+        z-index: 2;
+        text-align: center;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+       }
+       .container:hover{
+         transform: rotateY(180deg);
+       }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div id="card1">
+            <img src="card.jpg">
+        </div>
+        <div id="card2">
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Beatae maxime cum, temporibus nam voluptatem odio velit dolorem nesciunt in. Illo.
+        </div>
+    </div>
+
+
+</body>
+
+</html>
