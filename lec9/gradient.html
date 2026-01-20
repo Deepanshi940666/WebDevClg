@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .linear-gradient{
+            height: 30vh;
+            width: 50vw;
+            /* background: linear-gradient(rgb(21, 91, 91),rgb(56, 128, 128),rgb(115, 146, 146)); */
+            /* background: linear-gradient( to right,rgb(21, 91, 91),rgb(56, 128, 128),rgb(115, 146, 146)); */
+            /* background: linear-gradient(120deg,rgb(21, 91, 91),rgb(56, 128, 128),rgb(115, 146, 146)); */
+              background: repeating-linear-gradient(
+                to right,
+                red 0px,
+                red 10px,
+                black 10px,
+                black 20px
+
+            );
+            margin: auto;
+            border-radius: 50px;
+            color: aliceblue;
+            font-size: 3rem;
+            text-align: center;
+        }
+        .radial-gradient{
+            height: 30vh;
+            width: 50vw;
+            /* background: radial-gradient(circle at top left,purple,rgb(220, 24, 122),pink);  */
+            /* background: linear-gradient( to right,rgb(21, 91, 91),rgb(56, 128, 128),rgb(115, 146, 146)); */
+            background: repeating-radial-gradient(
+                circle,
+                red 0px,
+                red 10px,
+                black 10px,
+                black 20px
+
+            );
+            margin:40px auto;
+            border-radius: 50px;
+            color: aliceblue;
+            font-size: 3rem;
+            text-align: center;
+        }
+        .conical-gradient{
+            height: 30vh;
+            width: 50vw;
+            /* background: radial-gradient(circle at top left,purple,rgb(220, 24, 122),pink);  */
+            /* background: conic-gradient(from 45deg,red,white); */
+            background: repeating-conic-gradient(
+                /* from 45deg, */
+                red 0deg,
+                red 20deg,
+                black 20deg,
+                black 40deg
+
+            );
+            margin:40px auto;
+            border-radius: 50px;
+            color: aliceblue;
+            font-size: 3rem;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="linear-gradient">
+        linear-gradient
+    </div>
+    <div class="radial-gradient">
+        radial-gradient
+    </div>
+    <div class="conical-gradient">
+        conical-gradient
+    </div>
+</body>
+</html>

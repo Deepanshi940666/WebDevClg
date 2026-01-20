@@ -1,120 +1,138 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
-        body{
-            background: linear-gradient(skyblue,rgb(165, 214, 233),rgb(206, 230, 239));
+        body {
             height: 100vh;
             margin: 0;
             padding: 0;
-          
-         
+            background: linear-gradient(skyblue, rgb(165, 214, 233), rgb(206, 230, 239));
         }
-        h1{
-            color: hotpink;
-            /* font: 2em sans-serif; */
-            /* margin: 2px auto; */
+
+        h1 {
+            color: rgb(228, 26, 127);
             text-align: center;
             margin-top: 10px;
         }
-        .sunPart{   
+
+        .sunPart {
             display: flex;
             justify-content: end;
+            height: 60vh;
         }
-        #sun{
+
+        #sun {
             height: 100px;
             width: 100px;
-            background: linear-gradient(red,orange,yellow);
+            background: linear-gradient(red, orange, yellow);
             margin-right: 30px;
             border-radius: 50%;
             transition: 0s;
-            animation: rotate 8s infinite;
-            /* transition-duration: 2s; */
-            
+            animation: rotates 8s infinite; 
+            box-shadow: rgba(207, 244, 22, 0.657) 0px 8px 24px;   
         }
-        @keyframes rotate {
-            0%{
+
+        @keyframes rotates {
+            0% {
                 transform: rotate(0px);
             }
-            100%{
+
+            100% {
                 transform: rotate(360deg);
             }
+        }
+
+        .balloons {
+            display: flex;
+            justify-content: space-evenly;
+            align-items: end;
+        }
+
+        .element {
+            height: 100px;
+            width: 70px;
+            border-radius: 50%;
+            animation: fly infinite;
+            animation-direction: normal;
+            border: 1px solid black;
+            box-shadow: 0px 10px 13px -7px #000000, 5px 5px 15px 5px rgba(0,0,0,0);
+        }
+
+        @keyframes fly {
+            0% {
+                transform: translateY(0px);
+            }
+
+            100% {
+                transform: translateY(-90vh);
+            }
+        }
+
+        #B1 {
+            background-color: blue;
+            animation-timing-function: ease-in;
+            animation-duration: 5s;
             
         }
 
-        .grass{
-            height: 20vh;
-            width: 100%;
-            margin: 60vh auto 0px ;
-            background-color: green;
-        }
-        .balloons{
-            display: flex;
-            justify-content: space-evenly;
-            align-items: center;
-            /* height: 30vh; */
-        }
-        #B1{
-            /* position: absolute; */
-            height: 100px;
-            width: 60px;
-            background-color: blue;
-            border-radius: 50%;
-        }
-        #B2{
-            /* position: absolute; */
-            height: 100px;
-            width: 60px;
+        #B2 {
             background-color: rgb(209, 241, 25);
-            border-radius: 50%;
+            animation-timing-function: ease-in-out;
+            animation-duration: 10s;
         }
-        #B3{
-            /* position: absolute; */
-            height: 100px;
-            width: 60px;
+
+        #B3 {
             background-color: rgb(255, 0, 136);
-            border-radius: 50%;
+            animation-timing-function: ease-out;
+            animation-duration: 7s;
         }
-        #B4{
-            /* position: absolute; */
-            height: 100px;
-            width: 60px;
+
+        #B4 {
             background-color: rgb(223, 39, 26);
-            border-radius: 50%;
+            animation-timing-function: ease-in-out;
+            animation-duration: 8s;
         }
-        #B5{
-            /* position: absolute; */
-            height: 100px;
-            width: 60px;
+
+        #B5 {
             background-color: rgb(255, 72, 0);
-            border-radius: 50%;
+            animation-timing-function: ease-in-out;
+            animation-duration: 7s;
         }
-        #B6{
-            /* position: absolute; */
-            height: 100px;
-            width: 60px;
+
+        #B6 {
             background-color: rgb(17, 245, 74);
-            border-radius: 50%;
+            animation-timing-function: ease-in;
+            animation-duration: 10s;
+        }
+
+        .grass {
+            height: 25vh;
+            width: 100%;
+            background-color: green;
         }
     </style>
 </head>
+
 <body>
-    <h1>WELCOME TO BALLON FESTIVAL</h1>
-    <div class="sunPart">
-        <div id="sun"></div>
+    <div class="container">
+        <h1>🎉WELCOME TO BALLOON FESTIVAL✨</h1>
+        <div class="sunPart">
+            <div id="sun"></div>
+        </div>
+        <div class="balloons">
+            <div id="B1" class="element"></div>
+            <div id="B2" class="element"></div>
+            <div id="B3" class="element"></div>
+            <div id="B4" class="element"></div>
+            <div id="B5" class="element"></div>
+            <div id="B6" class="element"></div>
+        </div>
+        <div class="grass"></div>
     </div>
-    <div class="balloons">
-        <div id="B1"></div>
-        <div id="B2"></div>
-        <div id="B3"></div>
-        <div id="B4"></div>
-        <div id="B5"></div>
-        <div id="B6"></div>
-    </div>
-    <div class="grass"></div>
-    
 </body>
+
 </html>
