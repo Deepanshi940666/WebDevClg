@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background-color: cornsilk;
+        }
+        #ball{
+            height: 100px;
+            width: 100px;
+            border-radius: 50%;
+            background: linear-gradient(red,rgb(222, 93, 115),pink);
+            border: black 3px solid;
+            margin: auto;
+            transition: 3s;
+            animation: rotate 1s infinite;
+            animation-timing-function: ease-in;
+            animation-direction: alternate;
+           
+        }
+        @keyframes rotate {
+            0%{
+                transform: translateY(0px);
+            }
+            100%{
+                transform: translateY(80vh) rotate(360deg);
+            }
+        }
+        #box{
+            height: 30px;
+            width:0vw ;
+            margin: 80vh auto 0px ;
+            background-color: brown;
+        }
+    </style>
+</head>
+<body>
+    <div id="ball"></div>
+    <div id="box"></div>
+</body>
+</html>
