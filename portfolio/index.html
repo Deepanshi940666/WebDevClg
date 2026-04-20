@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Deep's Portfolio...</title>
     <script src="https://cdn.tailwindcss.com"></script>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet" />
 </head>
 
 <body class="min-w-screen w-auto md:min-w-screen">
@@ -19,7 +19,7 @@
             </h1>
             <div id="rightPart" class="justify-end md:justify-between flex flex-row w-[60vw]">
                 <div id="details" class="hidden md:flex flex-row text-center justify-between items-center">
-                    <a id="Home" class="m-2 font-semibold hover:[text-shadow:1px_1px_1px_gray]">Home</a>
+                    <a id="Home" class="m-2 font-semibold hover:[text-shadow:1px_1px_1px_gray]" href="#HomeSection">Home</a>
                     <a id="About" class="m-2 font-semibold hover:[text-shadow:1px_1px_1px_gray]">About</a>
                     <a id="Projects" class="m-2 font-semibold hover:[text-shadow:1px_1px_1px_gray]">Projects</a>
                     <a id="Skills" class="m-2 font-semibold hover:[text-shadow:1px_1px_1px_gray]">Skills</a>
@@ -38,25 +38,39 @@
                 </div>
             </div>
         </div>
-        <div id="body" class=" md:flex flex-row justify-center">
-            <div id="profile" class=" flex items-center justify-center">
-                <div id="circle"
-                    class="relative w-[200px] h-[200px] md:w-[350px] md:h-[350px] 
-mt-6 md:mt-[20vh] 
-rounded-full bg-orange-100 border-4 border-amber-500 border-t-transparent 
-animate-spin shadow-[0_0_20px_orange] transition duration-300">
-                    
+        <div id="body" >
+
+            <!-- home section -->
+
+            <div id="HomeSection" class="md:flex flex-row justify-center">
+                <div id="profile" class="flex items-center justify-center">
+                    <div id="circle"
+                        class="relative w-[200px] h-[200px] md:w-[350px] md:h-[350px] mt-6 md:mt-[20vh] rounded-full bg-orange-100 border-4 border-amber-500 border-t-transparent animate-spin shadow-[0_0_20px_orange] transition duration-300">
+                    </div>
+                    <img class="absolute mt-12 w-[150px] h-[150px] md:w-[300px] md:h-[300px] rounded-full z-10 md:mt-[25vh]"
+                        src="mei-fotor-bg-remover-20260419171319.png" />
                 </div>
-                <img class="absolute mt-6 w-[150px] h-[150px] md:w-[300px] md:h-[300px] 
-rounded-full z-10 md:mt-[25vh]" src="mei-fotor-bg-remover-20260419171319.png">
-                 
+                <div id="text" class="mt-[10vh] md:mt-[30vh] ml-6">
+                    <h2 class="font-semibold font-serif text-4xl">Hello It's Me</h2>
+                    <h1
+                        class="font-semibold font-serif text-5xl bg-gradient-to-r from-yellow-500 to-pink-500 bg-clip-text text-transparent">
+                        Deepanshi Gupta
+                    </h1>
+                    <h3 class="font-semibold font-serif text-2xl">And I'm a</h3>
+                    <h3
+                        class="font-semibold font-serif text-xl bg-gradient-to-r from-pink-500 to-purple-500 bg-clip-text text-transparent">
+                        Btech (CSE) 2nd year Student
+                    </h3>
+                    <p class="font-semibold font-serif text-l">
+                        "Passionate learner turning ideas into reality through creativity
+                        and code."
+                    </p>
+                </div>
             </div>
-            <div id="text" class="mt-[10vh] md:mt-[30vh] ml-6">
-                <h2 class="font-semibold font-serif text-4xl ">Hello It's Me</h2>
-                <h1 class="font-semibold font-serif text-5xl  bg-gradient-to-r from-yellow-500 to-pink-500 bg-clip-text text-transparent ">Deepanshi Gupta</h1>
-                <h3 class="font-semibold font-serif text-2xl">And I'm a</h3>
-                <h3 class="font-semibold font-serif text-xl bg-gradient-to-r from-pink-500 to-purple-500 bg-clip-text text-transparent">Btech (CSE) 2nd year Student </h3>
-                <p class="font-semibold font-serif text-l">"Passionate learner turning ideas into reality through creativity and code."</p>
+            <!-- about Section -->
+
+            <div id="AboutSection">
+
             </div>
         </div>
     </div>
