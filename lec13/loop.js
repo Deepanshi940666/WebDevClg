@@ -48,3 +48,25 @@ let add=(x,y) => {
 }
 add(2,4)
 
+
+SUM ()
+function SUM() { //hello
+     console.log("hello");
+}
+
+// Sum() //sum is not a function error
+// var Sum=()=>{
+//     console.log("hello");
+    
+// }
+
+let c=5
+function outer() {
+    console.log(c);
+    function inner() {
+        console.log("hello");
+        
+    }
+    inner()
+}
+outer()
