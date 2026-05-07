@@ -29,3 +29,22 @@ console.log(Student_obj.name);
 console.log(Student_obj.year);
 console.log(Student_obj.age);
 
+//GEC => global execution context
+
+let a=5;
+function sum() {
+    let b=10;
+    console.log(a);
+    console.log(b);
+    
+}
+sum();
+
+//arroww function
+
+let add=(x,y) => {
+    console.log(x+y);
+    
+}
+add(2,4)
+
