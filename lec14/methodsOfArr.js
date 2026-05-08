@@ -53,4 +53,16 @@ console.log(map);
 let Filter_val = arr.filter((a)=>{
     return a<4
 })
-console.log("filter",Filter_val);
+console.log("filter",Filter_val)
+
+let Reduce_sum= arr.reduce((a,b,c,d)=>{ //c-index,d-array a=a+b b is next val of index
+    console.log(a,"a");
+    console.log(b,"b");
+    return a+b
+})
+
+let sum= arr.reduce((a,b,c,d)=>{ //c-index,d-array a=a+b b is next val of index
+    console.log(a,"a:");
+    console.log(b,"b:");
+    return a+b
+},10)//here is initial val of a=10 and b=index 0 val
