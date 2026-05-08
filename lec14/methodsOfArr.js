@@ -44,7 +44,7 @@ let map=arr.map((a,b,c)=>{
     // console.log(a,"val");
     // console.log(b,"index");
     // console.log(c,"arr");
-    return a<4; //return in true or false
+    return a*2; //return in true or false
     
 })
 console.log(map);
