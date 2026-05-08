@@ -66,3 +66,18 @@ let sum= arr.reduce((a,b,c,d)=>{ //c-index,d-array a=a+b b is next val of index
     console.log(b,"b:");
     return a+b
 },10)//here is initial val of a=10 and b=index 0 val
+
+let a=[1,2,3,5,53,6,3,6,345,2]
+let Less_4=a.filter((a)=>{
+    return a<4
+})
+
+let even=Less_4.filter((Less_4)=>{
+    return Less_4%2==0
+})
+
+let Sum=even.reduce((a,b)=>{
+    return a+b
+})
+
+console.log(Sum);
