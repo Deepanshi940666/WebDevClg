@@ -105,3 +105,22 @@ console.log(final);
 
 let Amt= price.map(a=>a+(GST/100)*a.toFixed(2));
 console.log(Amt);
+
+//--------FILTER-----------
+
+//filter() creates a new array with only the elements that pass the test. If no elements pass, it returns an empty array [] — never undefined.
+//filter() vs find(): filter() returns an ARRAY of ALL matches. find() returns ONE element.
+
+// Only even numbers
+
+let nums=[1,2,253,4,5,6,7,8,9,10]
+console.log("even no.",nums.filter(a=>a%2==0));
+
+//Students who passed (marks >= 40)
+
+let Students=[{name:"Arya", marks:85}, {name:"Ravi", marks:72}, {name:"pari", marks:80}, {name:"Raja", marks:34}, {name:"akash", marks:23}, {name:"Pihu", marks:39}]
+console.log("Marks of These Students has greater then 40",Students.filter(Student=>Student.marks>=40 ));
+
+//  Remove empty strings
+const items = ["apple", "", "mango", "", "banana"];
+console.log("string is: ", items.filter(a=> a!=""));
