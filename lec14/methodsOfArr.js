@@ -81,3 +81,27 @@ let Sum=even.reduce((a,b)=>{
 })
 
 console.log(Sum);
+
+//---------MAP-----------
+
+//map() always returns an array of the SAME LENGTH. Use it to transform, not to filter.
+
+//Extract names from objects
+const students = [{name:"Arya", marks:85}, {name:"Ravi", marks:72}];
+const names = students.map(s => s.name);
+
+console.log(names[0]);
+console.log(names[1]);
+console.log(names);
+
+//Add GST to prices
+let price=[200,400];
+let GST= 5; //in perceentage
+
+let final= price.map((a)=>{
+    return a*(1+(GST/100))
+})
+console.log(final);
+
+let Amt= price.map(a=>a+(GST/100)*a.toFixed(2));
+console.log(Amt);
