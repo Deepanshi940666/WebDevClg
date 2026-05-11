@@ -124,3 +124,9 @@ console.log("Marks of These Students has greater then 40",Students.filter(Studen
 //  Remove empty strings
 const items = ["apple", "", "mango", "", "banana"];
 console.log("string is: ", items.filter(a=> a!=""));
+
+
+//-------REDUCE--------
+//reduce() processes each element and accumulates a single result. It can produce a number, string, object, or even another array. This is the most powerful array method!
+
+//Count fruit occurrences
