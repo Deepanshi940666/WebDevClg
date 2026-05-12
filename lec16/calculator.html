@@ -4,8 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Calculator</title>
-    <style href="style.css"></style>
+    <link href="style.css" rel="styleSheet"></link>
 </head>
+
 <body>
     <div id="container">
         <div id="calculation">
@@ -14,15 +15,15 @@
         <div id="btns">
             <div class="rows">
                 <button id="clear" class="top">C</button>
-                <button id="exponent">^</button>
-                <button id="modulo">%</button>
+                <button id="exponent" class="top">^</button>
+                <button id="modulo" class="top">%</button>
                 <button id="divide" class="lastRight">/</button>
             </div>
             <div class="rows">
                  <button class="num" >7</button>
                 <button class="num" >8</button>
                 <button class="num" >9</button>
-                <button class="lastRight">x</button>
+                <button class="lastRight">*</button>
             </div>
             <div class="rows">
                   <button class="num" >4</button>
@@ -39,10 +40,11 @@
             <div class="rows">
                 <button class="num" >0</button>
                 <button class="num" >.</button>
-                <!-- <button class="num" >6</button> -->
+                <button class="num" >Del</button>
                 <button class="lastRight">=</button>
             </div>
         </div>
     </div>
+    <script src="Calculator.js"></script>
 </body>
 </html>
