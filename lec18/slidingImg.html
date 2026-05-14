@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+    </style>
+</head>
+<body>
+    <h1>Sliding Image</h1>
+    <img src="">
+    <script>
+        let img=document.querySelector("img")
+        const arr=[
+            "https://i1-c.pinimg.com/736x/eb/3e/a8/eb3ea89756dc493fd5a52b648726b9d3.jpg",
+            "https://i.pinimg.com/736x/73/68/a2/7368a2c20519d0a6d9e045f0f03b5973.jpg",
+            "https://i.pinimg.com/736x/79/a4/4a/79a44a359956ef7cd50735c096c12912.jpg",
+            "https://i.pinimg.com/736x/d0/a0/c4/d0a0c48b12c0aac7f5583ad5b1868fd4.jpg"
+        ]
+
+        let num=0;
+        setInterval(function(){
+            img.setAttribute("src",arr[num]);
+            num=(num+1)%arr.length;
+        },100)
+    </script>
+</body>
+</html>
