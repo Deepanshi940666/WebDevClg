@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let pro= new Promise((res,reject)=>{
+          //if you do not call any parameter then it wll show "pending"
+         //res();  //"fulfilled"
+         reject();  //"rejected"
+
+
+        //  setTimeout(()=>{
+        //     res();
+        //  },4000)
+
+
+        })
+
+        pro.then(()=>{//appicable only for res()
+            console.log("Done");
+            
+        }).catch(()=>{//appicable only for reject()
+            console.log("Errorrrr");
+            
+        })
+        console.log(pro);
+
+        function step1(){
+          return new Promise((res,rej)=>{
+            setTimeout(()=>{
+                console.log("selectedd");
+                res();
+            },5000)
+          })
+            
+        }
+
+      function step2(){
+          return new Promise((res,rej)=>{
+            setTimeout(()=>{
+                console.log("captionss added");
+                res();
+            },4000)
+          })
+            
+        }
+
+       function step3(){
+          return new Promise((res,rej)=>{
+            setTimeout(()=>{
+                console.log("music added");
+                res();
+            },3000)
+          })
+            
+        }
+
+        function step4(){
+          return new Promise((res,rej)=>{
+            setTimeout(()=>{
+                console.log("posted");
+                res();
+            },2000)
+          })
+            
+        }
+       
+
+        // step1();
+        // step2();
+        // step3();
+        // step4();
+
+         //solution
+        //with a different function call
+        //using callback function
+
+        // step1(function (){
+        //     step2(function(){
+        //         step3(function(){
+        //             step4(function(){
+        //                 step5();
+        //             })
+        //         })
+
+        //     })
+        // })
+
+        // step1().then(()=>{
+        //     step2().then(()=>{
+        //         step3().then(()=>{
+        //             step4().then(()=>{
+        //                 // res();
+        //             })
+        //         })
+        //     })
+        // })
+
+
+        //async await
+        async function call() {
+            await step1()
+            await step2()
+            await step3()
+            await step4()
+        }
+        call()
+        
+    </script>
+</body>
+</html>
