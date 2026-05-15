@@ -48,4 +48,5 @@ reset.addEventListener("click",()=>{
         val.innerText=""
         val.disabled=false
     }
+    msgBox.style.visibility="hidden"
 })
