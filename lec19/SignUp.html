@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SignUp</title>
+    <style>
+        body {
+            background-color: beige;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            /* height: 90vh; */
+            flex-direction: column;
+        }
+
+        #Form {
+            margin: 30px;
+            height: auto;
+            width: 20vw;
+            background-color: black;
+            color: antiquewhite;
+            padding: 20px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+        }
+        #LoginForm {
+            margin: 30px;
+            height: auto;
+            width: 20vw;
+            background-color: black;
+            color: antiquewhite;
+            padding: 20px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+        }
+
+        button {
+            margin: 10px;
+        }
+
+        input {
+            margin: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <h2>SignUp Part</h2>
+    <form id="Form">
+        <input id="Name" placeholder="UserName">
+        <input id="Email" placeholder="Email">
+        <input id="Password" placeholder="Password">
+        <button id="SignUp">SignUp</button>
+    </form>
+
+    <h2>Login Part</h2>
+    <form id="LoginForm">
+        <input id="LoginName" placeholder="UserName">
+        <input id="LoginEmail" placeholder="Email">
+        <input id="LoginPassword" placeholder="Password">
+        <button id="login">Login</button>
+    </form>
+    <script src="SignUp.js"></script>
+</body>
+
+</html>
