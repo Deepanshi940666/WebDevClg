@@ -1,0 +1,66 @@
+body{
+    background-color: rgb(32, 32, 97);
+    display:flex ;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height:90vh;
+    user-select: none;
+}
+#container{
+ background-color: beige;
+ height: auto;
+ width: auto;
+ display: flex;
+ flex-direction: column;
+ justify-content: center;
+ align-items: center;
+ padding: 50px;
+ border-radius: 20px;
+}
+
+#heading{
+    color: rgb(27, 26, 79);
+}
+
+#scorebox{
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    background-color: rgb(141, 153, 193);
+    width:80%;
+    border-radius: 10px;
+    padding: 5px;
+    height: 30px;
+    /* height: auto; */
+   /* margin-left: 40px;
+   margin-right: 40px; */
+}
+
+#options{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+button{
+    height: auto;
+    width: 20vw;
+    margin: 5px;
+    border-radius: 5px;
+    height: 40px;
+}
+
+#nextQues{
+    background-color: rgb(32, 32, 77);
+    color: beige;
+    /* width: ; */
+}
+
+#QuizQuesContainer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
