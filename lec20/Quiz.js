@@ -94,7 +94,7 @@ function checkAns(selectedIndex, btn){
 
     if(selectedIndex===correctAns){
         score++;
-        btn
+        // btn
     }
 };
 
