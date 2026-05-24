@@ -97,7 +97,6 @@ let ans= str.split("").reverse().join("")
 console.log(ans);
 console.log(str.replaceAll("js","jsx"));
 console.log(str.charAt(0));
-console.log(str.charAt(0));
 // console.log(str.length);
 // console.log(str.toLocaleUpperCase());
 // console.log(str.toLocaleLowerCase());
