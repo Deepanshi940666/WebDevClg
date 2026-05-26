@@ -1,7 +1,7 @@
 import React from 'react'
 import A from './A'
 const props = ({data}) => {
-    // console.log(data);
+    // console.log("heyyyy");
     
   return (
     // <A data={user}/>
