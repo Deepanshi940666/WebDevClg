@@ -1,19 +1,20 @@
 import React from 'react'
 import {useState} from 'react';
 
- const [name, setName] = useState("");
+
 const Home = () => {
-   function fun1(){
-     const InputName= document.getElementById("Name").value
-     setName(InputName)
+  const [input, setInput] = useState("");
+   function fun1(e){
+      console.log(e.target.value);  
+      setInput(e.target.value) 
    }
 
   return (
     <div> 
-        <h1>Heyy</h1>
-        <input id="Name" type="text" placeholder="Enter your name"></input>
-        <button onclick={fun1}>Enter</button>
-        <h1>{name}</h1>
+        {/* <h1>Heyy</h1> */}
+        <input name="input"  type="text" placeholder="Enter your name" onChange={fun1}></input>
+        {/* <button onclick={fun1}>Enter</button> */}
+        <h1>{input}</h1>
     </div>
   )
 }

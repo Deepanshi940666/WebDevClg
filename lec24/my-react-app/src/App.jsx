@@ -1,7 +1,7 @@
 import {useState} from 'react';
-// import Home, { Home1, Home2 } from './Home';
+import Home, { Home1, Home2 } from './Home';
 // import Props from './Props';
-import Child from './Child';
+// import Child from './Child';
 // import Home from './Home';
 // import {Home1,Home2} from './Home';
 
@@ -28,10 +28,11 @@ const App = () => {
     {/* <div>Hellooooooooooooo</div>
     <h1>{2+2}</h1> */
     }
-    <h1>{count}</h1>
+    {/* <h1>{count}</h1>
     <button onClick={fun1} >Add</button>
     <button onClick={fun2} >-</button>
-    <Child/>
+    <Child/> */}
+    <Home/>
      {/* <Props data={user}/> */}
     {/* <button onClick={fun3}>Color Change</button>  */}
   </div>
