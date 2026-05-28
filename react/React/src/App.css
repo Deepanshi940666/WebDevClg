@@ -1,0 +1,39 @@
+
+form{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 40vh;
+  width: fit-content;
+  /* width: auto; */
+  /* margin: 60px; */
+  padding: 10px;
+  background-color: rgba(35, 77, 42, 0.966);
+  border-radius: 30px;
+  box-shadow:  0 4px 10px rgba(0,0,0,0.2);
+}
+
+div{
+  /* width: auto; */
+  background-color: bisque;
+  height: 100vh;
+   display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+
+}
+
+input{
+  margin: 20px;
+  height: 20px;
+  /* width: ; */
+}
+
+button{
+  border-radius: 30px;
+  height: 40px;
+  background-color: bisque;
+  width: 90px;
+}
