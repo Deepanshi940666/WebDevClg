@@ -13,7 +13,7 @@ const Home = () => {
     <div> 
         {/* <h1>Heyy</h1> */}
         <input name="input"  type="text" placeholder="Enter your name" onChange={fun1}></input>
-        {/* <button onclick={fun1}>Enter</button> */}
+        <button onclick={fun1} >Enter</button>
         <h1>{input}</h1>
     </div>
   )
