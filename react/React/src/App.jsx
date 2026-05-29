@@ -1,6 +1,7 @@
 import React from 'react'
 // import Form from './form'
-import Counter from './Counter'
+// import Counter from './Counter'
+import ApiFetch from './ApiFetch'
 import './App.css'
 
 // import Home, { Home1, Home2 } from './Home';
@@ -10,7 +11,8 @@ const App = () => {
     <div> 
       {/* <Home/> */}
       {/* <Form/> */}
-      <Counter/>
+      {/* <Counter/> */}
+      <ApiFetch/>
     </div>
   )
 }

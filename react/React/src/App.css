@@ -1,39 +1,71 @@
 
-form{
+/* form{
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
   height: 40vh;
-  width: fit-content;
+  width: fit-content; */
   /* width: auto; */
   /* margin: 60px; */
-  padding: 10px;
+  /* padding: 10px;
   background-color: rgba(35, 77, 42, 0.966);
   border-radius: 30px;
   box-shadow:  0 4px 10px rgba(0,0,0,0.2);
-}
+} */
 
-div{
+/* div{ */
   /* width: auto; */
-  background-color: bisque;
+  /* background-color: bisque;
   height: 100vh;
    display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
 
-}
+} */
 
-input{
+/* input{
   margin: 20px;
-  height: 20px;
+  height: 20px; */
   /* width: ; */
-}
+/* } */
 
-button{
+/* button{
   border-radius: 30px;
   height: 40px;
   background-color: bisque;
   width: 90px;
+} */
+#Div{
+  background-color: cadetblue;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  height: 100%;
+  flex-wrap: wrap;
+}
+
+.Boxes{
+  /* background-color: bisque; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  border: 2px solid black;
+  width: 20vw;
+  background-color: bisque;
+  margin: 20px;
+  /* height: 10vh; */
+}
+
+img{
+  height: 100px;
+  
+}
+
+#Boxes:hover{
+  transform: scale(0.1);
+  transition:40ms;
 }
