@@ -13,9 +13,9 @@ const Form = () => {
   return (
     <div>
         <form>
-            <input name='name' value={input.name} type="text" placeholder='Enter your name' onChange={fun1}></input>
-            <input name='email' value={input.email} type="text" placeholder='Enter your email' onChange={fun1}></input>
-            <input name='password' value={input.password} type="text" placeholder='Enter your Rollno.' onChange={fun1}></input>
+            <input name='name' type="text" placeholder='Enter your name' onChange={fun1}></input>
+            <input name='email' type="text" placeholder='Enter your email' onChange={fun1}></input>
+            <input name='password' type="text" placeholder='Enter your Rollno.' onChange={fun1}></input>
             <button >Submit</button>
         </form>
     </div>
