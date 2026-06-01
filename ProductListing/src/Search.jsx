@@ -43,6 +43,7 @@ const Search = () => {
             <div id='searchBar'>
                 <input id='searching' type='text' placeholder='Enter Product' onChange={(e) => { setInput(e.target.value) }}></input>
                 <button id='searchBtn' onClick={ApiCall}>Search</button>
+                <button id='SortByPrice' onClick={}></button>
 
 
             </div>
