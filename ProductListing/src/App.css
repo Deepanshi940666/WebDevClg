@@ -1,0 +1,46 @@
+#Div{
+  background-color: cadetblue;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  height: 100%;
+  flex-wrap: wrap;
+}
+
+.Boxes{
+  /* background-color: bisque; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  border: 2px solid black;
+  width: 20vw;
+  background-color: bisque;
+  margin: 20px;
+  /* height: 10vh; */
+}
+
+img{
+  height: 100px;
+  
+}
+
+#Boxes:hover{
+  transform: scale(0.1);
+  transition:40ms;
+}
+
+#searchBar{
+  background-color:  cadetblue;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#searching{
+    height: 30px;
+    width: 20vw;
+    border-radius: 10px;
+    border: solid black 2px;
+}
