@@ -6,6 +6,7 @@ import form from './form'
 // import ApiFetch from './ApiFetch'
 import NavBar from './NavBar'
 import './App.css'
+import './NavBar.css'
 import { Form, Route, Routes } from 'react-router-dom'
 import About from './About'
 import Home from './Home'
@@ -22,6 +23,9 @@ const App = () => {
       {/* <Form/> */}
       {/* <Counter/> */}
       {/* <ApiFetch/> */}
+      
+      <h2>  hellllllllllllllllllllllllllllllllll</h2>
+      <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ducimus, eaque alias? Ratione nihil id provident dolorum veniam non deleniti tempora ipsam, cupiditate ipsum aperiam harum aliquid repudiandae omnis consequuntur qui!</p>
       <NavBar/>
       <Routes>
         <Route path='/' element={<Home/>}> </Route>

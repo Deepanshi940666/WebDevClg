@@ -14,5 +14,10 @@
 }
 
 #home,#about,#task{
-    color: beige;
+    color: red;
+    background-color: green;
 }
+/* #task{
+    background-color: pink;
+    color: red;
+} */
