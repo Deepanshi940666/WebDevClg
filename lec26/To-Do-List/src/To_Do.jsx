@@ -3,6 +3,7 @@ import './App.css'
 import { use } from 'react'
 const To_Do = () => {
     const [task, setTask] = useState("")
+    const [index,setIndex]=useState(null)
     const [todo, setTodo] = useState(() => {
         let data = localStorage.getItem("key")
         if (data) {
@@ -30,6 +31,23 @@ const To_Do = () => {
         setTodo(newTodo);
     }
 
+    function edit(index){
+        setIndex(index);
+        setTask(todo[index])
+    }
+
+    function HandleORUpdate(){
+        if(index!=null){
+            let UpdateData=[...todo]
+            UpdateData[index]=task
+            setTodo(UpdateData)
+        }
+        else{
+            setTodo([...todo,task])
+            setTask(" ")
+        }
+    }
+
     return (
         <div id='List'>
             <h1>Todo List</h1>
@@ -38,7 +56,9 @@ const To_Do = () => {
                     setTask(e.target.value)
 
                 }} />
-                <button id='Add' onClick={Task}>Add</button>
+                <button id='Add' onClick={HandleORUpdate}>
+                    {index!=null?"update":"add"}
+                </button>
             </div>
             <div className="todo-list">
                 {todo.map((to_do, index) => (
@@ -46,8 +66,8 @@ const To_Do = () => {
                         <span>{to_do}</span>
 
                         <div className="actions">
-                            <button >
-                                Edit
+                            <button onClick={()=>edit(index)} >
+                                edit
                             </button>
 
                             <button onClick={() => { d(index) }}>
