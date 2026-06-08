@@ -1,5 +1,6 @@
 import React from 'react'
 import form from './form'
+// import Child from './Child.jsx'
 // import  from './form'
 // import form from './form'
 // import Counter from './Counter'
@@ -11,6 +12,7 @@ import { Form, Route, Routes } from 'react-router-dom'
 import About from './About'
 import Home from './Home'
 import Task from './Task'
+import Child from './Child.jsx'
 
 // import Home, { Home1, Home2 } from './Home';
 // import Form from 'Form';
@@ -19,19 +21,19 @@ const App = () => {
   
   return (
     <div> 
-      {/* <Home/> */}
+      <Child/>
       {/* <Form/> */}
       {/* <Counter/> */}
       {/* <ApiFetch/> */}
       
-      <h2>  hellllllllllllllllllllllllllllllllll</h2>
+      {/* <h2>  hellllllllllllllllllllllllllllllllll</h2>
       <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ducimus, eaque alias? Ratione nihil id provident dolorum veniam non deleniti tempora ipsam, cupiditate ipsum aperiam harum aliquid repudiandae omnis consequuntur qui!</p>
       <NavBar/>
       <Routes>
         <Route path='/' element={<Home/>}> </Route>
         <Route path='/about' element={<About/>}> </Route>
         <Route path='/task' element={<Task/>}> </Route>
-      </Routes>
+      </Routes> */}
     </div>
   )
 }
