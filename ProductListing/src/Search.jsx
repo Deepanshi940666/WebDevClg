@@ -1,9 +1,9 @@
 import React, { useEffect } from 'react'
 import { useState } from 'react';
 import './App.css'
-const Search = () => {
+const Search = ({ApiData, setApiData}) => {
     let [input, setInput] = useState("")
-    let [ApiData, setApiData] = useState([])
+    
     console.log("hiii");
 
     async function ApiCall() {
@@ -43,7 +43,7 @@ const Search = () => {
             <div id='searchBar'>
                 <input id='searching' type='text' placeholder='Enter Product' onChange={(e) => { setInput(e.target.value) }}></input>
                 <button id='searchBtn' onClick={ApiCall}>Search</button>
-                <button id='SortByPrice' onClick={}></button>
+                {/* <button id='SortByPrice' onClick={}></button> */}
 
 
             </div>
