@@ -10,6 +10,7 @@ const App = () => {
       {/* <To_Do/> */}
       {/* <UseReducer/> */}
       <Bg/>
+      
     </div>
   )
 }
