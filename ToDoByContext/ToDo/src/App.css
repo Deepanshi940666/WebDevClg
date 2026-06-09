@@ -1,0 +1,74 @@
+/* Full page center */
+body {
+  margin: 0;
+  padding: 0;
+  background: #f4f6f9;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+div {
+  box-sizing: border-box;
+}
+
+/* Main container */
+body > div,
+#root {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  min-height: 100vh;
+  padding-top: 50px;
+}
+
+/* Todo card */
+#root > div {
+  background: white;
+  width: 450px;
+  padding: 25px;
+  border-radius: 15px;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+}
+
+/* Input section */
+input {
+  width: 70%;
+  padding: 12px;
+  border: 2px solid #ddd;
+  border-radius: 8px;
+  outline: none;
+  font-size: 16px;
+}
+
+input:focus {
+  border-color: #4a90e2;
+}
+
+/* Button */
+button {
+  margin-left: 10px;
+  padding: 12px 20px;
+  border: none;
+  background: #4a90e2;
+  color: white;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 15px;
+  transition: 0.3s;
+}
+
+button:hover {
+  transform: translateY(-2px);
+  background: #357abd;
+}
+
+/* Todo items */
+h2 {
+  margin-top: 15px;
+  padding: 12px;
+  background: #eef4ff;
+  border-left: 5px solid #4a90e2;
+  border-radius: 8px;
+  font-size: 18px;
+  color: #333;
+  word-wrap: break-word;
+}
