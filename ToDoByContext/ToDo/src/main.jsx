@@ -5,9 +5,11 @@ import App from './App.jsx'
 import Context from "./Context_todo/todo_Context"
 
 
+
 createRoot(document.getElementById('root')).render(
   <StrictMode>
     <Context>
+   
     <App />
     </Context>
    
