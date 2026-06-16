@@ -1,7 +1,7 @@
 import React from 'react'
 
 const Prototype = () => {
-    let arr=[1,2,3,4]
+    let arr=[1,2,3,4,5]
     // arr.prototype.fun1= function() {
     //     console.log("hiii");
         
@@ -43,17 +43,29 @@ Array.prototype.myForEach=function(cb){
     // return variable
 }
 
+Array.prototype.myReduce= function(cb,data=0){
+    let val=data;
+    for(let i=0;i<this.length;i++){
+       val= cb(val,this[i],i,this)
+    }
+    return val
+}
 // let val=arr.myFilter((a,b,c)=>{
 //     // console.log(a);
 //     return a>2
 // })
 
-let data=arr.myForEach((a,b,c)=>{
-    console.log(a);
+let red=arr.myReduce((a,b,c,d)=>{
+    return a+b
+},10)
+console.log(red);
+
+// let data=arr.myForEach((a,b,c)=>{
+//     console.log(a);
     
-})
+// },10)
  
-console.log(data);
+// console.log(data);
 
 
     // console.log(Array.prototype);
