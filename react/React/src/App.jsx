@@ -13,15 +13,17 @@ import About from './About'
 import Home from './Home'
 import Task from './Task'
 import Child from './Child.jsx'
+import Prototype from './Prototype.jsx'
 
 // import Home, { Home1, Home2 } from './Home';
 // import Form from 'Form';
 const App = () => {
-  console.log("hey");
+  // console.log("hey");
   
   return (
     <div> 
-      <Child/>
+      <Prototype/>
+      {/* <Child/> */}
       {/* <Form/> */}
       {/* <Counter/> */}
       {/* <ApiFetch/> */}
