@@ -14,6 +14,7 @@ import Home from './Home'
 import Task from './Task'
 import Child from './Child.jsx'
 import Prototype from './Prototype.jsx'
+import Chat_Bot from './chatBot/Chat_Bot.jsx'
 
 // import Home, { Home1, Home2 } from './Home';
 // import Form from 'Form';
@@ -22,7 +23,8 @@ const App = () => {
   
   return (
     <div> 
-      <Prototype/>
+      <Chat_Bot/>
+      {/* <Prototype/> */}
       {/* <Child/> */}
       {/* <Form/> */}
       {/* <Counter/> */}
