@@ -11,7 +11,7 @@
     justify-content: center;
     align-items: center;
 
-    padding: 80px;
+    padding: 80px 20px;
 }
 
 .about-container{
@@ -77,4 +77,50 @@
 .about-content button:hover{
     transform: translateX(8px);
     transition: .3s;
+}
+
+@media (max-width: 1024px) {
+  .about-container {
+    flex-direction: column;
+  }
+
+  .about-image img {
+    height: 350px;
+  }
+
+  .about-content {
+    padding: 40px;
+  }
+}
+
+@media (max-width: 768px) {
+  .about-section {
+    padding: 30px;
+  }
+
+  .about-content h1 {
+    font-size: 2.5rem;
+  }
+
+  .about-image img {
+    height: 300px;
+  }
+}
+
+@media (max-width: 480px) {
+  .about-content {
+    padding: 20px;
+  }
+
+  .about-content h1 {
+    font-size: 2rem;
+  }
+
+  .about-content p {
+    font-size: 0.9rem;
+  }
+
+  .subtitle {
+    font-size: 1.2rem;
+  }
 }
