@@ -1,5 +1,6 @@
 import React from 'react'
 import Main from './CustomHook/Main'
+import Game from './TicTacToe/Game'
 // import Home from './ToDOListContext/Home'
 
 // import Contexttt from './Context_todo/todo_Context'
@@ -12,7 +13,8 @@ const App = () => {
       {/* <Contexttt/> */}
       {/* <Todo/> */}
       {/* <Bg/> */}
-      <Main/>
+      {/* <Main/> */}
+      <Game/>
     </div>
   )
 }
