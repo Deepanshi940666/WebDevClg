@@ -46,7 +46,7 @@ const Game = () => {
       store[a] === store[b] &&
       store[b] === store[c]
     ) {
-      return store[a];
+       return store[a];  
     }
     }
     return null;
